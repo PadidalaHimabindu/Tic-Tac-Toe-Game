@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+body {
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+
+h1.gradient-text {
+    font-size: 2.5rem;
+    margin: 1rem 0;
+    background: linear-gradient(90deg, #00c6ff, #00d948);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+    
+}
+
+.game {
+    height: 60vmin;
+    width: 60vmin;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.box {
+    height: 18vmin;
+    width: 18vmin;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 1rem;
+    border: none;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #0072ff;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.box:hover {
+    transform: scale(1.05);
+}
+
+#status {
+    margin: 1rem;
+    font-size: 1.2rem;
+    color: #00e676;
+}
+
+#toggleMode, #reset {
+    margin: 1rem;
+    padding: 0.75rem 1.5rem;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 0.5rem;
+    background: #0070d9;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#toggleMode:hover, #reset:hover {
+    background: #005dc1;
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    background: #00c6ff;
+
+
+}
+
+footer {
+    padding: 1rem;
+    font-size: 0.9rem;
+}
